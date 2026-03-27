@@ -26,3 +26,20 @@ This project tracks and forecasts financial performance using Excel, Power BI, a
 ## Future Work:
 - More interactive dashboards
 - Deeper ML-based forecasting
+
+---
+
+<!-- codex:project-diagram:start -->
+
+## Project Diagram
+
+```mermaid
+flowchart LR
+    A["Raw Data"] --> B["Preprocessing"]
+    B --> C["Model Training"]
+    C --> D["Predictions / Reports"]
+```
+
+_Core machine-learning workflow from source data to final artifacts._
+
+<!-- codex:project-diagram:end -->
