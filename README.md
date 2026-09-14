@@ -1,29 +1,62 @@
 # Financial Forecasting Model 📊
 
-This project tracks and forecasts financial performance using Excel, Power BI, and Python.
+[![Python](https://img.shields.io/badge/Python-Analysis-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Excel](https://img.shields.io/badge/Excel-Modeling-217346?logo=microsoftexcel&logoColor=white)](https://www.microsoft.com/microsoft-365/excel)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-Regression-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![statsmodels](https://img.shields.io/badge/statsmodels-ARIMA-4c78a8)](https://www.statsmodels.org/)
 
-## Features:
-- Budget vs Actual tracking
-- Visualizations in Excel, Plotly
-- Regression & ARIMA forecasting
+Budget vs actual tracking and illustrative revenue forecasts in Excel, Power BI, and Python (linear regression and ARIMA).
 
-## Project Structure:
-- `/data` - Raw financial data
-- `/models` - Excel forecasting models
-- `/scripts` - Python scripts for analysis & visualization
-- `/powerbi` - Power BI files (if applicable)
+**Homepage:** this README (no separate live demo).
 
-## How to Use:
-1. Run `scripts/scaffold.py` to prepare Excel models.
-2. Use `scripts/regression_predictor.py` for basic regression.
-3. Visualize with `scripts/visualizations.py` or Excel/Power BI.
+## Gallery
 
-## Financial Assumptions:
-- Budgeted Revenue includes a 10% buffer over actuals.
-- Budgeted Costs are 5% over actual COGS.
+Charts below are generated from `models/financial_forecast_model.xlsx` (the `BudgetVsActual` sheet).
+
+![Monthly budget vs actual revenue](docs/screenshots/01-budget-vs-actual.png)
+
+![ARIMA three-month revenue forecast](docs/screenshots/02-arima-forecast.png)
+
+![Excel-style monthly table and regression forecast](docs/screenshots/03-excel-regression.png)
+
+Refresh the PNGs after changing the workbook:
+
+```bash
+pip install -r requirements.txt
+python docs/screenshots/render_gallery.py
+```
+
+## Features
+
+- Budget vs actual tracking
+- Visualizations in Excel and Plotly
+- Regression and ARIMA forecasting
+
+## Project structure
+
+- `/data` — raw financial CSV
+- `/models` — Excel forecasting workbook
+- `/scripts` — Python analysis and visualization
+- `/powerbi` — Power BI template (placeholder)
+- `/docs/screenshots` — README gallery outputs
+
+## How to use
+
+1. `pip install -r requirements.txt`
+2. Run `scripts/scaffold.py` to prepare Excel models.
+3. Use `scripts/regression_predictor.py` for basic regression.
+4. Use `scripts/advanced_forecast_arima.py` for the ARIMA example.
+5. Visualize with `scripts/visualizations.py` or Excel/Power BI.
+
+## Financial assumptions
+
+- Budgeted revenue includes a 10% buffer over actuals.
+- Budgeted costs are 5% over actual COGS.
 - Forecasting models are illustrative (linear regression, ARIMA).
 
-## Future Work:
+## Future work
+
 - More interactive dashboards
 - Deeper ML-based forecasting
 
@@ -31,7 +64,7 @@ This project tracks and forecasts financial performance using Excel, Power BI, a
 
 <!-- codex:project-diagram:start -->
 
-## Project Diagram
+## Project diagram
 
 ```mermaid
 flowchart LR
